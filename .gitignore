@@ -1,0 +1,15 @@
+*.class
+*.jar
+.cpcache
+.hg/
+.hgignore
+.lein-*
+.nrepl-history
+.nrepl-port
+.rebel_*
+REBL*
+checkouts
+classes
+pom.xml
+pom.xml.asc
+target

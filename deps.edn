@@ -1,0 +1,7 @@
+{:deps {cider/cider-nrepl {:mvn/version "0.18.0"}
+        com.bhauman/rebel-readline {:mvn/version "0.1.4"}
+        nrepl {:mvn/version "0.5.3"}
+        proto-repl {:mvn/version "0.3.1"}
+        rickmoynihan/rebl.middleware {:local/root "/Users/jay/Projects/nrebl.middleware"}
+        com.cognitect.rebl {:local/root "/Users/jay/Tools/REBL/REBL.jar"}
+        org.clojure/core.async {:mvn/version "0.4.490"}}}
