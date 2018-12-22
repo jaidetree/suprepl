@@ -15,10 +15,6 @@
   {:middleware (concat [#'nrebl.middleware/wrap-nrebl]
                        (map resolve cider.nrepl/cider-middleware))})
 
-; (def default-server-config
-;   {:middleware ["nrebl.middleware/wrap-nrebl"
-;                 "cider.nrepl/cider-middleware"]})
-
 (defn build-handler
   "Build an nREPL handler from `middleware`.
   `middleware` is a sequence of vars or string which can be resolved

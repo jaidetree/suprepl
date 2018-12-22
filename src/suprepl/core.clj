@@ -1,13 +1,16 @@
 (ns suprepl.core
   (:require
-   [suprepl.nrepl :refer [start-repl-server]]
-   [rebel-readline.main :as rebel]
+   [clojure.pprint :refer [pprint]]
    [cognitect.rebl]
-   [clojure.pprint :refer [pprint]]))
+   [suprepl.rebel :refer [repl]]
+   [suprepl.nrepl :refer [start-repl-server]]))
 
 (defn -main
   [& _]
   (cognitect.rebl/ui)
   (start-repl-server {})
-  (rebel/-main)
+  (repl)
   (System/exit 0))
+
+(comment
+ (println msg))
